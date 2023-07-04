@@ -1,8 +1,9 @@
 class Player 
   attr_accessor :life
+  attr_reader :id
 
-  def initialize(name)
-    @name = name
+  def initialize(id)
+    @id = id
     # Set default life
     @life = 3
   end

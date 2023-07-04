@@ -5,11 +5,12 @@ class Question
   end
 
   # Asks and compares question
-  def ask_question
+  def ask_question(player)
     num_one = random_number
     num_two = random_number
     answer = num_one + num_two
-    puts "What is the sume of #{num_one} and #{num_two}?"
+
+    puts "Player #{player.id}, What is the sum of #{num_one} and #{num_two}?"
     
     # Get user response
     response = nil
